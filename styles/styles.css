@@ -34,3 +34,8 @@ p{
     line-height: 1.5;
     color: #333333;
 }
+
+.styled-image{
+    border-radius: 10px;
+
+}
