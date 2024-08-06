@@ -126,3 +126,135 @@ window.addEventListener("scroll", function() {
       navbar.classList.remove("sticky");
     }
 })
+
+//pagination
+document.addEventListener("DOMContentLoaded", function () {
+    const itemsPerPage = 6;
+    const productItems = document.querySelectorAll(".product-item");
+    const totalPages = Math.ceil(productItems.length / itemsPerPage);
+
+    function showPage(page) {
+        const start = (page - 1) * itemsPerPage;
+        const end = start + itemsPerPage;
+        productItems.forEach((item, index) => {
+            item.style.display = (index >= start && index < end) ? "block" : "none";
+        });
+    }
+
+    function setPageLinks() {
+        for (let i = 1; i <= totalPages; i++) {
+            const pageLink = document.getElementById(`page-${i}`);
+            if (pageLink) {
+                pageLink.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    showPage(i);
+                });
+            }
+        }
+
+        document.getElementById("prev-page").addEventListener("click", function (event) {
+            event.preventDefault();
+            const currentPage = parseInt(document.querySelector(".pagination .active .page-link").textContent);
+            if (currentPage > 1) showPage(currentPage - 1);
+        });
+
+        document.getElementById("next-page").addEventListener("click", function (event) {
+            event.preventDefault();
+            const currentPage = parseInt(document.querySelector(".pagination .active .page-link").textContent);
+            if (currentPage < totalPages) showPage(currentPage + 1);
+        });
+    }
+
+    showPage(1); // Show the first page initially
+    setPageLinks(); // Set up the page links
+});
+
+
+//pagination
+document.addEventListener("DOMContentLoaded", function () {
+    const itemsPerPage = 4;
+    const productItems = document.querySelectorAll(".gallery-item");
+    const totalPages = Math.ceil(productItems.length / itemsPerPage);
+
+    function showPage(page) {
+        const start = (page - 1) * itemsPerPage;
+        const end = start + itemsPerPage;
+        productItems.forEach((item, index) => {
+            item.style.display = (index >= start && index < end) ? "block" : "none";
+        });
+    }
+
+    function setPageLinks() {
+        for (let i = 1; i <= totalPages; i++) {
+            const pageLink = document.getElementById(`page-${i}`);
+            if (pageLink) {
+                pageLink.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    showPage(i);
+                });
+            }
+        }
+
+        document.getElementById("prev-page").addEventListener("click", function (event) {
+            event.preventDefault();
+            const currentPage = parseInt(document.querySelector(".pagination .active .page-link").textContent);
+            if (currentPage > 1) showPage(currentPage - 1);
+        });
+
+        document.getElementById("next-page").addEventListener("click", function (event) {
+            event.preventDefault();
+            const currentPage = parseInt(document.querySelector(".pagination .active .page-link").textContent);
+            if (currentPage < totalPages) showPage(currentPage + 1);
+        });
+    }
+
+    showPage(1); // Show the first page initially
+    setPageLinks(); // Set up the page links
+});
+
+
+$(document).ready(function() {
+    var images = [
+        './img/gallery-img1.png',
+        './img/gallery-img-2.png',
+        './img/gallery-img3.png',
+        './img/gallery-img4.png',
+        './img/gallery-img5.png',
+        './img/gallery-img6.png',
+        './img/gallery-img7.png',
+        './img/gallery-img8.png'
+    ];
+
+    $('.gallery-item img').on('click', function() {
+        var currentIndex = $(this).parent().index();
+        var carouselInner = $('#carousel-inner');
+        carouselInner.empty();
+
+        images.forEach((image, index) => {
+            var activeClass = index === currentIndex ? 'active' : '';
+            carouselInner.append(`
+                <div class="carousel-item ${activeClass}">
+                    <img src="${image}" class="d-block w-100">
+                </div>
+            `);
+        });
+
+        $('#galleryModal').modal('show');
+    });
+});
+
+function initMap() {
+    console.log('ffff');
+    
+    var location = {lat: 6.9802378, lng: 80.2209766};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 4,
+      center: location
+    });
+    var marker = new google.maps.Marker({
+      position: location,
+      map: map
+    });
+  }
+
+  

@@ -9,7 +9,9 @@
     --navbar-font-color:#4eb47c;
     --generation-background-color:#ede1d1;
     --card-border-color: #00ff75;
-    --card-background-color:#f4fff3
+    --card-background-color:#f4fff3;
+    --pagination-background-color:#dcffd8;
+    --contact-card-bg-color:#fff5e1
 }
 
 body{
@@ -355,4 +357,66 @@ p{
   .process-card{
     border: 2px solid var(--card-border-color);
     background-color: var(--card-background-color);
+  }
+
+  .page-link {
+    color: var(--top-navbar-color) !important;
+}
+
+.page-link:hover {
+    background-color: #dcffd8;
+    border-color: #dcffd8;
+}
+
+.page-link {
+    border: none !important;
+    box-shadow: 0px 0px 3px #00000014;
+}
+
+.page-link:focus {
+    color: var(--top-navbar-color) !important;
+    background-color: var(--pagination-background-color);
+    box-shadow: none;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.contact-card{
+    background-color: var(--contact-card-bg-color);
+}
+
+.form-control {
+    line-height: 2;
+    background-color: var(--card-background-color);
+    border: 2px solid var(--pagination-background-color);
+}
+
+.form-control:focus {
+    background-color: var(--card-background-color);
+    border: 2px solid var(--pagination-background-color);
+    box-shadow: none;
+}
+
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--sub-heading-font-color);
+    opacity: 1; 
+    font-weight: 600;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.contact-btn{
+    background-color: var(--top-navbar-color);
+}
+
+#map {
+    height: 400px;
+    width: 100%;
   }
