@@ -4,43 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Story</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uruwela Tea</title>
+    <title>Our Story - Uruwela Tea</title>
+    <meta name="description" content="Discover the journey of Uruwela Tea, rooted in history since 1920. Learn about our mission, vision, and legacy of producing premium Ceylon tea.">
+    <meta name="keywords" content="Uruwela Tea, Ceylon Tea, History of Uruwela Tea, Premium Tea, Sri Lanka Tea, Tea Legacy">
+    <link rel="canonical" href="https://www.example.com/our-story">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Our Story - Uruwela Tea">
+    <meta property="og:description" content="Discover the journey of Uruwela Tea, rooted in history since 1920. Learn about our mission, vision, and legacy of producing premium Ceylon tea.">
+    <meta property="og:image" content="https://www.example.com/img/banner.jpg">
+    <meta property="og:url" content="https://www.example.com/our-story">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Our Story - Uruwela Tea">
+    <meta name="twitter:description" content="Discover the journey of Uruwela Tea, rooted in history since 1920. Learn about our mission, vision, and legacy of producing premium Ceylon tea.">
+    <meta name="twitter:image" content="https://www.example.com/img/banner.jpg">
+
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 
-    <!-- bootstrap cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- custom css     -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./styles/styles.css">
 
-    <!-- google font Hahmlet -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Font: Hahmlet -->
     <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@400..900&display=swap" rel="stylesheet">
 
-    <!-- owl-carousel-cdn -->
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <!-- font-awesome-icon     -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Uruwela Tea",
+        "url": "https://www.example.com",
+        "logo": "https://www.example.com/img/logo.png",
+        "description": "Premium quality Ceylon tea producer with a legacy dating back to 1920.",
+        "sameAs": [
+            "https://www.facebook.com/UruwelaTea",
+            "https://www.instagram.com/UruwelaTea"
+        ]
+    }
+    </script>
 </head>
 
 <body>
     <div id="navbar-container"></div>
 
     <section id="main-banner-section">
-        <img src="./img/banner.jpg" class="img-fluid w-100">
+        <img src="./img/banner.jpg" class="img-fluid w-100" alt="Our Story Banner">
         <h1 class="text-uppercase text-white fw-bold banner-text text-center">OUR STORY</h1>
     </section>
 
+    <!-- Our History -->
+    
     <!-- ------------------------------------------- our hisory start ------------------------------------------- -->
     <section id="our-history">
         <div class="container">
@@ -68,8 +94,8 @@
                 </div>
                 <div class="col-md-5">
                     <div class="history-img-wrapper">
-                        <img src="./img/Rectangle.jpg" class="img-fluid rectangle-img w-50">
-                        <img src="./img/our-story-our-history-img.jpg" class="img-fluid our-history-image">
+                        <img src="./img/Rectangle.jpg" class="img-fluid rectangle-img w-50"alt="Our Story">
+                        <img src="./img/our-story-our-history-img.jpg" class="img-fluid our-history-image"alt="Our Story">
                     </div>
                 </div>
             </div>
@@ -80,7 +106,7 @@
         <div class="container common-section-padding">
             <div class="row align-items-center gx-0">
                 <div class="col-md-5">
-                    <img src="./img/old_gen.jpg" class="img-fluid  border-top-left border-bottom-right">
+                    <img src="./img/old_gen.jpg" class="img-fluid  border-top-left border-bottom-right"alt="Our Story">
                 </div>
                 <div class="col-md-7">
                     <h5 class="main-heading"></h5>
@@ -116,59 +142,105 @@
                     standards.</p>
             </div>
             <div class="col-md-5 d-flex justify-content-end">
-                <img src="./img/mr.thilak.jpg" class="img-fluid border-top-left border-bottom-right w-75">
+                <img src="./img/mr.thilak.jpg" class="img-fluid border-top-left border-bottom-right w-75"alt="Our Story">
             </div>
         </div>
     </div>
 
     <!-- ------------------------------------------- our hisory end ------------------------------------------- -->
 
-    <!-- -------------------------------------------mission-vession start ------------------------------------------- -->
 
+    <!-- Vision and Mission -->
     <section id="vission-mission-sec">
         <div class="container common-section-padding">
             <div class="row align-items-center g-0">
                 <div class="col-md-4 col-sm-6">
                     <h6 class="sub-heading fw-bold">Our Statements</h6>
                     <h5 class="main-heading">Mission</h5>
-                    <p class="mt-5">We strive to sustainably grow our business by upgrading bygone tea formulas blending
-                        with new flavors with the application of latest technologies in contemplation of delivering
-                        great tasting tea, pleasure, and satisfaction to our customers.</p>
+                    <p class="mt-5">We strive to sustainably grow our business by upgrading bygone tea formulas blending with new flavors...</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="./img/teamissionvision.png" class="img-fluid w-100 d-none d-sm-block">
+                    <img src="./img/teamissionvision.png" class="img-fluid w-100 d-none d-sm-block" alt="Mission and Vision">
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <h6 class="sub-heading fw-bold">Our Statements</h6>
-                    <h5 class="main-heading">Visson</h5>
-                    <p class="mt-5">To uphold and enhance the foremost place of Ceylon tea in the global tea market and
-                        ensure the health and well-being of mankind by offering a chance to uncover the taste of our
-                        delightful tea.</p>
+                    <h5 class="main-heading">Vision</h5>
+                    <p class="mt-5">To uphold and enhance the foremost place of Ceylon tea in the global tea market and ensure the health...</p>
                 </div>
             </div>
         </div>
     </section>
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Logo Section -->
+            <div class="col-md-2">
+                <div class="logo"></div>
+            </div>
+            <!-- Contact Us Section -->
+            <div class="col-md-3">
+                <h5 class="column-title" style="font-size: 14px; font-weight: bold;">CONTACT US</h5>
+                <p class="content"><i class="fas fa-phone"></i> +94 412 283 654</p>
+                <p class="content"><i class="fas fa-envelope"></i> uruwalatea@gmail.com</p>
+                <p class="content"><i class="fas fa-map-marker-alt"></i> Uruwala Tea Estate, Akuressa, 10450 Sri Lanka.</p>
+            </div>
+            <!-- Quick Links Section -->
+            <div class="col-md-2">
+                <h5 class="column-title" style="font-size: 14px; font-weight: bold;">QUICK LINKS</h5>
+                <p class="content"><a href="/home" style="text-decoration: none; color: inherit;">Home</a></p>
+                <p class="content"><a href="/our-story" style="text-decoration: none; color: inherit;">Our Story</a></p>
+                <p class="content"><a href="/our-team" style="text-decoration: none; color: inherit;">Our Team</a></p>
+                <p class="content"><a href="/privacy-policy" style="text-decoration: none; color: inherit;">Privacy Policies</a></p>
+            </div>
+            <!-- Additional Links Section -->
+            <div class="col-md-2">
+                <h5 class="column-title" style="font-size: 14px; font-weight: bold; visibility:hidden;">QUICK LINKS</h5>
+                <p class="content"><a href="/process" style="text-decoration: none; color: inherit;">Process</a></p>
+                <p class="content"><a href="/products" style="text-decoration: none; color: inherit;">Products</a></p>
+                <p class="content"><a href="/gallery" style="text-decoration: none; color: inherit;">Gallery</a></p>
+                <p class="content"><a href="/terms-of-use" style="text-decoration: none; color: inherit;">Terms of Use</a></p>
+            </div>
+            <!-- Social Media Section -->
+            <div class="col-md-3">
+                <h5 class="column-title" style="font-size: 14px; font-weight: bold;">SOCIAL MEDIA</h5>
+                <div class="social-media">
+                    <a href="https://wa.me/+94412283654" target="_blank" style="text-decoration: none; color: inherit;"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://facebook.com/UruwelaTea" target="_blank" style="text-decoration: none; color: inherit;"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/UruwelaTea" target="_blank" style="text-decoration: none; color: inherit;"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Section -->
+        <div class="row">
+            <div class="col-12">
+                <div class="bottom-line"></div>
+                <p class="copyright" style="font-size: 12px;">© Copyright 2023 Uruwala Group All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
-    <!-- -------------------------------------------mission-vession end ------------------------------------------- -->
+<!-- SEO Meta Tags for Footer Section -->
+<meta name="description" content="Contact Uruwala Tea for the finest Ceylon Black Tea. Get in touch with us via phone, email, or our social media platforms. Visit us at Uruwala Tea Estate in Akuressa.">
+<meta name="keywords" content="Uruwala Tea, Contact, Ceylon Tea, Tea Estate, Tea Products, Sri Lanka Tea, Privacy Policies, Social Media, Tea Process">
+<meta property="og:title" content="Contact Uruwala Tea - Finest Ceylon Tea">
+<meta property="og:description" content="Reach out to Uruwala Tea for premium Ceylon Tea. Explore our story, products, and more via our contact options.">
+<meta property="og:url" content="http://www.uruwelatea.com/contact">
+<meta property="og:image" content="./img/og-image.jpg">
+<meta property="og:type" content="website">
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <!-- bootstarp cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
-
-    <!-- owl-carousel     -->
+    <!-- Owl Carousel JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- customjs -->
 
+    <!-- Custom JS -->
     <script src="./js/main.js"></script>
+
+     
 </body>
 
 </html>

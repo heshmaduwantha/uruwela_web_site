@@ -47,7 +47,6 @@ h6{
 p{
     font-size: 18px;
     line-height: 1.5;
-<<<<<<< HEAD
     color: #333333;
 }
 
@@ -579,11 +578,6 @@ hr {
         justify-content: center;
     }
 }
-
-=======
-    color: var(--normal-font-color);
-}
-
 .common-section-padding{
     padding-top: 75px;
     padding-bottom: 75px;
@@ -956,4 +950,3 @@ input[type=number]::-webkit-inner-spin-button {
   }
    
 
->>>>>>> ea3b84f94c2e97a095834dbe37bee94c1ad20c28
